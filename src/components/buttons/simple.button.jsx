@@ -1,7 +1,9 @@
-function SimpleButton(text) {
+export default function SimpleButton({ text, onClickHandler }) {
   return (
     <>
-      <button>text</button>
+      <button className="btn btn-primary" onClick={onClickHandler}>
+        {text}
+      </button>
     </>
   );
 }
