@@ -10,8 +10,10 @@ export default function NamePicker({ studentList }) {
   }
   return (
     <>
-      <h2>{randomName}</h2>
       <SimpleButton text={"Pick Name"} onClickHandler={randomNameHandler} />
+      <span>
+        <p>{randomName}</p>
+      </span>
     </>
   );
 }
